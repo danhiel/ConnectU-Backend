@@ -83,7 +83,7 @@ app.post("/discover/insert", async function(req, res) {
 app.get("/profile", async function(req, res) {
     try {
         let user_id = req.params.user_id;
-        let sql = "SELECT * FROM user_table WHERE user_id=?";
+        let sql = "SELECT * FROM user_table INNER JOIN events ON user_table.user_id=events.user_id";
         res.status(SERVER_ERROR).json(await db.query(sql, user_id));
     } catch (error) {
         res.status(SERVER_ERROR).json(SERVER_ERROR_MSG);
