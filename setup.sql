@@ -1,6 +1,6 @@
 -- Author: Zach, Danhiel
 -- Last updated: 02/19/2022
--- Project: ConnectSU
+-- Project: ConnectU
 -- Creates a new database for the ConnectSU application, dropping the old one if it exists.
 
 DROP DATABASE IF EXISTS connectu;

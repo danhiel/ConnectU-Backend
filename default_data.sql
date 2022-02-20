@@ -1,10 +1,10 @@
 -- Author: Zach, Danhiel
 -- Last updated: 02/19/2022
--- Project: ConnectSU
+-- Project: ConnectU
 -- Populate the database with fake data.
 
 INSERT INTO Groups VALUES ('Volleyball Club');
-INSERT INTO Groups VALUES ("Men's Volleyball Club");
+INSERT INTO Groups VALUES ('Men''s Volleyball Club');
 INSERT INTO Groups VALUES ('ACM Club');
 INSERT INTO Groups VALUES ('Biology Club');
 
