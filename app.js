@@ -45,6 +45,7 @@ app.get("/home", async function(req, res) {
  * Returns a JSON response with profile user ID and user profile pic.
  */
 app.get("/events", async function(req, res) {
+    res.set('Access-Control-Allow-Origin', '*');
     try {
         let sql = await db.query(
             "SELECT events.*, user_table.first_name, user_table.last_name FROM events " +
